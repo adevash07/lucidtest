@@ -1,0 +1,113 @@
+.userpix {
+background-image: url('../../img/biguserpix.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 50vh;
+  min-width: 100%;
+}
+
+div.exp {
+    border: 1px solid #871E99;
+}
+div.exp.highlight {
+    background-color: var(--main-color);
+    color: white;
+}
+
+div.test {
+   border:1px solid #4D8AF0;
+   width: 100%;
+   position: relative;
+}
+
+p.pro {
+  font-size: calc(10px + 5 * ((100vw - 320px) / 680));
+}
+
+.testimg {
+    position: absolute;
+    top: -40%;
+    left: 20%;
+    right:20%;
+}
+
+@media only screen and (max-width: 1520px) {
+    .testimg {
+    position: absolute;
+    top: -40%;
+    left: 10%;
+    right: 10%;
+}
+}
+
+@media only screen and (max-width: 1485px) {
+    .testimg {
+    position: absolute;
+    top: -30%;
+    left: 10%;
+    right: 10%;
+}
+}
+
+@media only screen and (max-width: 1340px) {
+    img.proimage {
+   width: 80%;
+}
+    img.proimage.c {
+        width: 70%;
+
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .testimg {
+    position: absolute;
+    top: -30%;
+    left: 5%;
+    right: 5%;
+}
+}
+
+@media only screen and (max-width: 1235px) {
+    button.btn.hire {
+        width: 40%;
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .testimg {
+    position: absolute;
+    top: -40%;
+    left: 5%;
+    right: 5%;
+}
+}
+@media only screen and (max-width: 992px) {
+    div div.place:not(:last-child) {
+    margin-bottom: 10rem;
+}
+
+button.btn.shorten {
+    width: 30%;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+  img.proimage.c {
+      width: 76%;
+  }
+  .mb-bottom {
+      margin-bottom: 5rem;
+  }
+
+  h2.reduce {
+      font-size: larger;
+  }
+  button.btn.hire {
+        width: 60%;
+        height: 60%;
+    }
+}

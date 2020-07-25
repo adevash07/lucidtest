@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Bio Setup</title>
+    <link rel="stylesheet" href="./assets/css/custom-css/portfolio-bio-setup.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap-tagsinput.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid mt-5">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="logo__icon">
+                        <img src="./assets/img/logo.svg" alt="">
+                        <select style="border: 1px solid transparent;"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Sidebar Begin -->
+                    <div class="side__bar">
+                        <div class="profile__img mb-4">
+                            <img src="./assets/img/1.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <p class="detail__name mb-2">KOSI BEN MADUKWE</p>
+                            <p class="detail__info">Front end developer, ui/ux developer, friend and traveller.</p>
+                        </div>
+                        <div class="line mt-4 mb-4"></div>
+                        <ul class="side__menu pl-0 mb-5">
+                            <li class="mb-2">POSTS</li>
+                            <li class="mb-2">THOUGHTS</li>
+                            <li class="mb-2">VIDEOS</li>
+                            <li class="mb-2">CONTACT</li>
+                            <li class="mb-2 active">PORTFOLIO</li>
+                        </ul>
+                        <div class="socials mt-5">
+                            <button class="mb-3">FOLLOW ME</button>
+                            <div class="row soc">
+                                <div class="col-6 left">
+                                    <p class="mb-1 fol">Following</p>
+                                    <p class="number">45</p>
+                                </div>
+                                <div class="col-6 right">
+                                    <p class="mb-1 fol">Followers</p>
+                                    <p class="number">45</p>
+                                </div>
+                            </div>
+                            <p class="lucid">Power By Lucid</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar End -->
+                <div class="col-md-9">
+                    <div class="main__bar">
+
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="prog">
+                                    <img src="./assets/img/6.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form class="fxm" action="/porfolio-project-setup.html">
+                                    <div class="form-group mb-3">
+                                        <label for="exampleFormControlTextarea1" class="label__form">Your Short
+                                            Bio</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            placeholder="Front end developer, ui/ux developer, friend and traveller."></textarea>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <input type="text" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Tagline">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label for="inputState" class="label__form">Track</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Select Track Here</option>
+                                            <option>UI/UX</option>
+                                            <option>Front End</option>
+                                            <option>Back End</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn__btn">Next</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <form class="fxm">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group mb-3">
+                                                <label for="exampleFormControlTextarea1"
+                                                    class="label__form">Technologies</label>
+                                                <div class="tag__box">
+                                                    <input type="text" value="Figma,XD,AI" data-role="tagsinput" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group mb-3">
+                                                <label for="exampleFormControlTextarea1"
+                                                    class="label__form">Frameworks</label>
+                                                <div class="tag__box">
+                                                    <input type="text" value="VueJs, ReactJs, Angular"
+                                                        data-role="tagsinput" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group mb-3">
+                                                <label for="exampleFormControlTextarea1"
+                                                    class="label__form">Languages</label>
+                                                <div class="tag__box">
+                                                    <input type="text" value="HTML, Java, C++" data-role="tagsinput" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap-tagsinput.js"></script>
+</body>
+
+</html>

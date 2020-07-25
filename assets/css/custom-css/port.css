@@ -1,0 +1,22 @@
+#port {
+  background-image: url('../../img/draw.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+  min-width: 100%;
+}
+
+button.btn.port {
+    height:7%;
+    margin-top: -30rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+@media only screen and (max-width: 992px){ 
+   button.btn.active {
+
+        width: 40%;
+   }
+
+} 
+

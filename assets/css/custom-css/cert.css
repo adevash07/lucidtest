@@ -1,0 +1,31 @@
+button.add {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    text-align: left;
+    padding: 0.5rem 1rem;
+    width: 50%;
+}
+
+button.choose {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 0.6rem;
+    width: 45%;
+}
+
+@media only screen and (max-width: 1116px) {
+    button.add {
+        width: 80%;
+    }
+
+    button.choose{
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    button.choose {
+        width: 100%;
+    }
+}
