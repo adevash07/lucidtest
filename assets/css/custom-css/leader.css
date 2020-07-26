@@ -26,8 +26,7 @@ nav h3 {
 .nav-item .nav-link {
     color: inherit;
     font-weight: 600;
-    background-color: white;
-    font-size: calc(9.5px + 10 * ((100vw - 320px) / 680)) ;
+    font-size: calc(9.5px + 6 * ((100vw - 320px) / 680)) ;
 }
 a.nav-link.con {
     font-weight: 500;
@@ -80,7 +79,6 @@ div.nav-icon div {
 
 .nav-item.active .nav-link:active, .nav-item.active .nav-link:hover{
   color: white;
-  background-color: white;
 }
 
 p.num {
