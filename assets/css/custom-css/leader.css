@@ -26,6 +26,7 @@ nav h3 {
 .nav-item .nav-link {
     color: inherit;
     font-weight: 600;
+    background-color: white;
     font-size: calc(9.5px + 10 * ((100vw - 320px) / 680)) ;
 }
 a.nav-link.con {
@@ -79,6 +80,7 @@ div.nav-icon div {
 
 .nav-item.active .nav-link:active, .nav-item.active .nav-link:hover{
   color: white;
+  background-color: white;
 }
 
 p.num {
@@ -98,7 +100,7 @@ input::-webkit-file-upload-button {
     border: 0.5px solid black;
 }
 
-button.btn:focus, button.btn:focus {
+button.btn:focus, button.btn:hover {
     background-color: #fff !important;
     border: 1px solid #871E99 !important;
     color: #871E99 !important;
