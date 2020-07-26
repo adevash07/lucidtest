@@ -8,7 +8,7 @@ body {
 
 nav h2 {
     font-weight: 600;
-    font-size: calc(10px + 10 * ((100vw - 320px) / 680));
+    font-size: calc(17px + 10 * ((100vw - 320px) / 680));
 }
 nav h2 + p {
     font-weight: 500;
