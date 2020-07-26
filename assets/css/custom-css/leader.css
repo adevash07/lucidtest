@@ -26,7 +26,7 @@ nav h3 {
 .nav-item .nav-link {
     color: inherit;
     font-weight: 600;
-    font-size: calc(10px + 4 * ((100vw - 320px) / 680)) ;
+    font-size: calc(9.5px + 10 * ((100vw - 320px) / 680)) ;
 }
 a.nav-link.con {
     font-weight: 500;
@@ -60,11 +60,11 @@ div.nav-icon div {
   transition: all .2s ease-in-out;
 }
 
-.nav-icon:hover:active {
+.nav-icon:active {
   transform: translateY(12px) rotate(135deg);
 }
 
-.nav-icon:hover:active {
+.nav-icon:active {
   transform: translateY(-12px) rotate(-135deg);
 }
 
@@ -76,6 +76,11 @@ div.nav-icon div {
 .nav-link:active, .nav-link:hover {
     color: var(--main-color);
 }
+
+.nav-item.active .nav-link:active, .nav-item.active .nav-link:hover{
+  color: white;
+}
+
 p.num {
     color: var(--main-color)
 }
@@ -90,7 +95,7 @@ button.btn {
 
 input::-webkit-file-upload-button {
     background-color: white;
-    border: 1px solid black
+    border: 0.5px solid black;
 }
 
 button.btn:focus, button.btn:focus {
@@ -143,5 +148,11 @@ button.btn:focus, button.btn:focus {
     right: 0;
     top: 0;
     z-index: 49;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.follow {
+    width: 100%!important;
   }
 }

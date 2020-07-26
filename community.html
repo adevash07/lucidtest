@@ -10,11 +10,8 @@
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-tagsinput.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="assets/css/custom-css/leader.css">
-    <link rel="stylesheet" href="assets/css/custom-css/port.css">
-
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -25,6 +22,11 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/fontawesome/css/brands.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/custom-css/portfolio-bio-setup.css">
+    <link rel="stylesheet" href="assets/css/custom-css/leader.css">
 
 </head>
 
@@ -38,7 +40,7 @@
                         <a class="navbar-brand" href="#">
                             <img src="assets/img/userpic.svg" alt="User-picture" class="img-fluid rounded-circle">
                         </a>
-                        <h2 class="purple-text mt-4">KOSI BEN MADUKWE</h2>
+                        <h2 class="purple-text text-center mt-4">KOSI BEN MADUKWE</h2>
                         <p class="px-md-1 px-5 w-75 text-center">Front end developer, ui/ux developer, friend and
                             traveller.</p>
                         <hr class="w-50">
@@ -81,14 +83,14 @@
                 </div>
             </section>
             <!--////////////////////////////////TO BE TOGGLE SIDEBAR////////////////////////////////-->
-            <section id="slide-navbar-collapse" class="col-6 col-md-4 sidebar collapse navbar-collapse">
+            <section id="slide-navbar-collapse" class="col-8 col-sm-6 col-md-4 sidebar collapse navbar-collapse">
                 <div class="sideMenu d-flex flex-column justify-content-center align-items-center mt-5">
                     <nav class="navbar navbar-expand-lg d-flex flex-column justify-content-center align-items-center">
                         <!--Navigation-->
                         <a class="navbar-brand" href="#">
                             <img src="assets/img/userpic.svg" alt="User-picture" class="img-fluid rounded-circle">
                         </a>
-                        <h2 class="purple-text mt-4">KOSI BEN MADUKWE</h2>
+                        <h2 class="purple-text mt-4 text-center">KOSI BEN MADUKWE</h2>
                         <p class="px-2 w-100 text-center">Front end developer, ui/ux developer, friend and traveller.
                         </p>
                         <hr class="w-50">
@@ -116,7 +118,8 @@
                         </div>
 
                         <button type="button" class="btn">Follow me</button>
-                        <div class="d-flex justify-content-between w-75  px-0  px-md-3 my-3">
+                        <div
+                            class="d-flex flex-column flex-sm-row follow justify-content-between w-75  px-0  px-md-3 my-3">
                             <div class="d-flex flex-column">
                                 <p class="text-center">Followings</p>
                                 <p class="text-center num">192</p>
@@ -130,22 +133,22 @@
                     </nav>
                 </div>
             </section><!-- //////////////////////////////END OF TO BE TOGGLE SIDEBAR/////////////////-->
-
-            <!-- ////////////////////////////CONTENT/////////////////////////////////////-->
+            <!---////////////////////////////////////
+                                                                CONTENT                                          -->
             <section class="content col-12 col-md-8">
                 <div class="menu-overlay"></div>
                 <nav class="d-flex justify-content-between align-items-center mt-0 mt-md-5">
-                    <div class="d-flex show">
-                        <div id="ham" class="nav-icon d-block d-md-none navbar-toggle collapsed visi"
-                            data-toggle="slide-collapse" data-target="#slide-navbar-collapse">
+                    <div class="d-flex">
+                        <div class="nav-icon d-block d-md-none navbar-toggle collapsed" data-toggle="slide-collapse"
+                            data-target="#slide-navbar-collapse">
                             <div> </div>
                         </div>
                         <h3 class="mt-3 ml-3 ml-md-0"> Settings </h3>
                     </div>
 
 
-                    <h3 class="mt-3 dropdown dropleft"><a href="#" class="" data-toggle="dropdown" id="dropdownMenuButton"
-                            aria-haspopup="true" aria-expanded="false">
+                    <h3 class="mt-3 dropdown dropleft"><a href="#" class="" data-toggle="dropdown"
+                            id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
                             <img src="assets/img/lucid.svg">
                             <i class="fa fa-angle-down purple-text pt-1"></i>
                         </a>
@@ -156,19 +159,104 @@
                         </div>
                     </h3>
                 </nav>
-                <nav class="navbar-nav d-none">
-                    <ul class="navbar-nav d-flex flex-row justify-content-between w-50">
-                        <li class="nav-item"><a href="" class="nav-link con active">Profile</a></li>
-                        <li class="nav-item"><a href="" class="nav-link con">Accounts</a></li>
-                        <li class="nav-item"><a href="" class="nav-link con">Links</a></li>
-                        <li class="nav-item"><a href="" class="nav-link con">Security</a></li>
-                    </ul>
+                <nav class="navbar-nav mt-4">
+                    <img src="assets/img/comm.svg">
                 </nav>
 
-                <section class="row mt-4 mr-0">
-                    <div id="port" class="d-flex justify-content-center align-items-end"> 
-                        <button type="button" onclick="window.location.href='profile.html'" class="btn port active mb-4 mb-lg-0">Set Up Portfolio </button>
-                    </div>
+                <section class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <form class="fxm" action="/user.html">
+                                <div class="form-group mb-2">
+                                    <label for="exampleFormControlTextarea1" class="label__form">Speaking
+                                        Engagements</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Host</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Event Name">
+                                </div>
+                                <div class="btn__box mb-4">
+                                    <img src="../assets/img/plus.svg" alt="">
+                                    <div class="add__work__btn">Add more</div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="exampleFormControlTextarea1" class="label__form">Volunterism</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Organization">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Role">
+                                </div>
+                                <div class="btn__box mb-4">
+                                    <img src="../assets/img/plus.svg" alt="">
+                                    <div class="add__work__btn">Add more</div>
+                                </div>
+                                <label for="exampleFormControlTextarea1" class="label__form">Manage
+                                    Testimonials</label>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="testy">Testimonial 1</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="testimonial__btn">
+                                            <button>Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="testy">Testimonial 2</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="testimonial__btn">
+                                            <button>Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-9">
+                                        <p class="testy">Testimonial 3</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="testimonial__btn">
+                                            <button>Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" onclick="window.location.href='user.html'" class="btn btn-primary btn__btn">Next</button>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <form class="fxm">
+                                <div class="form-group mb-2">
+                                    <label for="exampleFormControlTextarea1" class="label__form">Open Source
+                                        Contribution</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Contribution Type</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="https://">
+                                </div>
+                                <div class="btn__box mb-4">
+                                    <img src="./assets/img/plus.svg" alt="">
+                                    <div class="add__work__btn">Add work</div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="exampleFormControlTextarea1" class="label__form">Guest Blogs</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Article Title">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="https://">
+                                </div>
+                                <div class="btn__box mb-4">
+                                    <img src="./assets/img/plus.svg" alt="">
+                                    <div class="add__work__btn">Add work</div>
+                                </div>
+                            </form>
+                        </div>
                 </section>
             </section>
         </div>
@@ -181,6 +269,7 @@
         integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
+    <script src="./js/bootstrap-tagsinput.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/dash.js"></script>
 </body>

@@ -18,8 +18,8 @@ h2 {
 }
 
 h3 {
-    font-size: 32px !important;
-    font-weight: bold !important;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 h4 {
@@ -47,7 +47,7 @@ li {
 }
 
 a {
-    color: #000 !important;
+    color: #000;
 }
 
 a:hover {

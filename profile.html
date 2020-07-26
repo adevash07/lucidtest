@@ -60,11 +60,11 @@
                     <button type="button" class="btn">Follow me</button>
                     <div class="d-flex justify-content-between w-75  px-0  px-md-3 my-3">
                         <div class="d-flex flex-column">
-                            <p>Following</p>
+                            <p class="text-center">Followings</p>
                             <p class="text-center num">192</p>
                         </div>
                         <div class="d-flex flex-column">
-                            <p>Followers</p>
+                            <p class="text-center">Followers</p>
                             <p class="text-center num">500</p>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
             </div>
         </section>
         <!--////////////////////////////////TO BE TOGGLE SIDEBAR////////////////////////////////-->
-        <section id="slide-navbar-collapse" class="col-6 col-md-4 sidebar collapse navbar-collapse">
+        <section id="slide-navbar-collapse" class="col-8 col-sm-6 col-md-4 sidebar collapse navbar-collapse">
             <div class="sideMenu d-flex flex-column justify-content-center align-items-center mt-5">
                     <nav class="navbar navbar-expand-lg d-flex flex-column justify-content-center align-items-center">
                         <!--Navigation-->
@@ -104,13 +104,13 @@
                             </ul></div>
 
                             <button type="button" class="btn">Follow me</button>
-                            <div class="d-flex justify-content-between w-75  px-0  px-md-3 my-3">
+                            <div class="d-flex flex-column flex-sm-row follow justify-content-between w-75  px-0  px-md-3 my-3">
                                 <div class="d-flex flex-column">
-                                    <p>Following</p>
+                                    <p class="text-center">Followings</p>
                                     <p class="text-center num">192</p>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <p>Followers</p>
+                                    <p class="text-center">Followers</p>
                                     <p class="text-center num">500</p>
                                 </div>
                             </div>
@@ -128,23 +128,29 @@
                     </div>
                     
                     
-                    <h3 class="mt-3"><a href>
+                    <h3 class="mt-3 dropdown dropleft"><a href="#"  class="" 
+                        data-toggle="dropdown" id="dropdownMenuButton"aria-haspopup="true" aria-expanded="false">
                             <img src="assets/img/lucid.svg">
                             <i class="fa fa-angle-down purple-text pt-1"></i>
-                        </a href>
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Option 1</a>
+                                <a class="dropdown-item" href="#">Option 2</a>
+                                <a class="dropdown-item" href="#">Option 3</a>
+                            </div>
                     </h3>
                 </nav>
-                <nav class="navbar-nav">
+                <nav class="navbar-nav mt-2">
                     <ul class="navbar-nav d-flex flex-row justify-content-between w-50">
-                        <li class="nav-item"><a href="" class="nav-link con active">Profile</a></li>
-                        <li class="nav-item"><a href="" class="nav-link con">Accounts</a></li>
-                        <li class="nav-item"><a href="" class="nav-link con">Links</a></li>
-                        <li class="nav-item"><a href="" class="nav-link con">Security</a></li>
+                        <li class="nav-item mr-3"><a href="" class="nav-link con active">Profile</a></li>
+                        <li class="nav-item mr-3"><a href="" class="nav-link con">Accounts</a></li>
+                        <li class="nav-item mr-3"><a href="" class="nav-link con">Links</a></li>
+                        <li class="nav-item mr-3"><a href="" class="nav-link con">Security</a></li>
                     </ul>
                 </nav>
 
                 <section class="row mt-4">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <form>
                             <div class="form-group">
                                 <label for="username"><strong>Your Names</strong></label>
@@ -160,12 +166,12 @@
                                 <textarea type="textarea" rows="4" class="form-control" id="bio" aria-describedby="userbio" placeholder="Front end developer, ui/ux developer, friend and traveller."></textarea>
                             </div>
                         </form>
-                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center mt-5">
+                        <div class="d-none d-md-flex flex-column flex-lg-row justify-content-between align-items-center mt-5">
                             <button type="button" class="btn active mb-4 mb-lg-0">Update UserProfile</button>
-                            <button type="button" onclick="window.location.href='index.html'" class="btn active">Build UserProfile</button>
+                            <button type="button" onclick="window.location.href='biosetup.html'" class="btn active">Build UserProfile</button>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                             <form>
                                 <div class="form-group">
                                     <label for="email"><strong>Your Email Address</strong></label>
@@ -179,6 +185,10 @@
                                     </div>
                                 </div>
                             </form>
+                            <div class="d-flex d-md-none flex-column flex-lg-row justify-content-between align-items-center mt-5">
+                                <button type="button" class="btn active mb-4 mb-lg-0">Update UserProfile</button>
+                                <button type="button"  onclick="window.location.href='biosetup.html'" class="btn active">Build UserProfile</button>
+                            </div>
                     </div>
                 </section>
         </section>   
